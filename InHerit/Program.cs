@@ -1,4 +1,6 @@
-﻿namespace InHerit
+﻿using InHerit.Auto;
+
+namespace InHerit
 {
     internal class Program
     {
@@ -15,6 +17,13 @@
             ts.ChangeData(8, 10);// Меняю значения
 
             ts.WriteData();
+
+            AutoBase afto = new AutoBase(5,10,"Двигатель 1");
+
+            afto.WriteData();
+
+            afto.ChangeData(4, 8, "Двигатель 2");
+            afto.WriteData();
         }
     }
 }

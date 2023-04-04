@@ -8,8 +8,8 @@ namespace InHerit
 {
     internal class TS
     {
-        private int Wheel;
-        private int Seat;
+        internal int Wheel;
+        internal int Seat;
         /// <summary>
         /// Конструктор по умолчанию(пустой)
         /// </summary>
@@ -31,7 +31,7 @@ namespace InHerit
         /// <summary>
         /// Вывод
         /// </summary>
-        public void WriteData()
+        public virtual void WriteData()
         {
             Console.WriteLine($"Колес - {Wheel}"); //Одно и то же
             Console.WriteLine("Сидушек - " +  Seat);
@@ -41,7 +41,7 @@ namespace InHerit
         /// </summary>
         /// <param name="wheel">кол. колес</param>
         /// <param name="seat">кол. сидушек</param>
-        public void ChangeData(int wheel, int seat)
+        public virtual void ChangeData(int wheel, int seat)
         {
             Wheel = wheel;
             Seat = seat;
