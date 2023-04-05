@@ -18,11 +18,11 @@ namespace InHerit
 
             ts.WriteData();
 
-            AutoBase afto = new AutoBase(5,10,"Двигатель 1");
+            AutoBase afto = new AutoBase(5,10,"Двигатель 1","Nissan");
 
             afto.WriteData();
 
-            afto.ChangeData(4, 8, "Двигатель 2");
+            afto.ChangeData(4, 8, "Двигатель 2", "Nissan");
             afto.WriteData();
         }
     }
