@@ -6,7 +6,7 @@
         {
             User user1 = new User("Виталий");
             User user2 = new User("Сергей");
-            List list = new List(new Task[] { new Task(user1, "Помыл машину"), new Task(user2, "Поменял колеса") });
+            List list = new List(new Task[] { new Task(user1, "Помыть машину"), new Task(user2, "Поменять колеса") });
 
             list.ShowAllTasks();
         }
