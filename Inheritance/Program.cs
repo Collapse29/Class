@@ -44,7 +44,7 @@
 
     class Knight : Warrior                                                                                      
     {
-        public Knight(int health, int armor, int damage) : base(health, armor, damage) { }     //Запрашиваем конст-ор из базового класса    
+        public Knight(int health, int armor, int damage) : base(health, armor, damage) { }                        //Запрашиваем конст-ор из базового класса    
         public void Pray()
         {
             Armor += 2;

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InHerit", "InHerit\InHerit.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CafeAdministration", "CafeAdministration\CafeAdministration.csproj", "{30F75F4C-C491-4C06-9AC7-3FB6D6B38CB2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Has-a", "Has-a\Has-a.csproj", "{E68FF9E2-2AF8-47B1-A798-76F8BEFDD20B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Has-a", "Has-a\Has-a.csproj", "{E68FF9E2-2AF8-47B1-A798-76F8BEFDD20B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{2695A350-D499-4035-8FF3-78D80295F478}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inheritance", "Inheritance\Inheritance.csproj", "{2695A350-D499-4035-8FF3-78D80295F478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battle", "Battle\Battle.csproj", "{D0705DA4-BCC4-4A39-9E68-15E9A3AF69AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{2695A350-D499-4035-8FF3-78D80295F478}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2695A350-D499-4035-8FF3-78D80295F478}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2695A350-D499-4035-8FF3-78D80295F478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0705DA4-BCC4-4A39-9E68-15E9A3AF69AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0705DA4-BCC4-4A39-9E68-15E9A3AF69AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0705DA4-BCC4-4A39-9E68-15E9A3AF69AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0705DA4-BCC4-4A39-9E68-15E9A3AF69AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
