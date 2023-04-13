@@ -9,22 +9,23 @@ namespace InHerit
     internal class TS
     {
         private int wheel;
-        protected int Wheel { get
-            {
-                return wheel;
-            }
-            set
-            {
-                if (value %2 == 0)
-                {
-                    wheel = value;
-                }
-                else
-                {
-                    wheel = value/2;
-                }
-            }
-                }
+        //protected int Wheel { get
+        //    {
+        //        return wheel;
+        //    }
+        //    set
+        //    {
+        //        if (value %2 == 0)
+        //        {
+        //            wheel = value;
+        //        }
+        //        else
+        //        {
+        //            wheel = value/2;
+        //        }
+        //    }
+        //        }
+        protected int Wheel { get; set; }
         protected int Seat { get; set; }
     /// <summary>
     /// Конструктор по умолчанию(пустой)
