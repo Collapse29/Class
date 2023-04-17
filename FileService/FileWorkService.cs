@@ -8,5 +8,10 @@
 
             return data;
         }
+
+        public void WriteFile(string path, string data)
+        {
+            File.WriteAllText(path, data);
+        }
     }
 }

@@ -45,5 +45,11 @@
             Engine = engine; //меняем значение в поле двигателя 
             Name = name;
         }
+
+        public override string ToString()
+        {
+            //string car = Wheel.ToString() + "/" + Seat.ToString() + "/" + Engine + "/" + Name;
+            return Wheel.ToString() + "/" + Seat.ToString() + "/" + Engine + "/" + Name;
+        }
     }
 }

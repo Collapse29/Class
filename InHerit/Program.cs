@@ -48,13 +48,17 @@ namespace InHerit
                 autoPark.AddCar(newCar);
             }
             autoPark.WriteCars();
+            //autoPark._autos[0].ChangeData(0,0,"","");(Поменять значение у машины, тут первая машина
 
-            foreach (string currentRow in autoData)
-            {
-                string[] element = currentRow.Split('/');
-                AutoBase newCar = new AutoBase(int.Parse(element[0]), int.Parse(element[1]), element[2], element[3]);
-                autoPark.AddCar(newCar);
-            }
+            //foreach (string currentRow in autoData)
+            //{
+            //    string[] element = currentRow.Split('/');
+            //    AutoBase newCar = new AutoBase(int.Parse(element[0]), int.Parse(element[1]), element[2], element[3]);
+            //    autoPark.AddCar(newCar);
+            //}
+            //autoPark.ToString();
+            //Console.WriteLine(autoPark.ToString());
+            fileWorkService.WriteFile(@"D:\Учеба\C#\Class\InHerit\dataBase.txt", autoPark.ToString());
         }
 
     }

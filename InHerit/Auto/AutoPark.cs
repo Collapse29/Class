@@ -39,5 +39,17 @@ namespace InHerit.Auto
                 _autos.RemoveAt(removeCar);
             }
         }
+
+        public override string ToString()
+        {
+            string cars = "";
+            for (int i = 0; i<_autos.Count; i++)
+            {
+                cars = cars + _autos[i].ToString() + Environment.NewLine;//Сложение машин с сохранением
+                //cars = cars + Environment.NewLine;//Перенос строки и на windows и linux и MacOC
+            }
+            //return string.Empty;(Пустая строка)
+            return cars;
+        }
     }
 }
