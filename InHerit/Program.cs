@@ -7,6 +7,11 @@ namespace InHerit
     {
         static void Main(string[] args)
         {
+            Console.WriteLine(
+                "1 - Вывод списка машин" + Environment.NewLine +
+                "2 - Добавить машину" + Environment.NewLine +
+                "3 - Сохранить данные" + Environment.NewLine +
+                "4 - Выход из программы");
             //TS ts = new TS();//Создали переменную класса ts
 
             //ts.WriteData();
@@ -47,7 +52,72 @@ namespace InHerit
                 AutoBase newCar = new AutoBase(int.Parse(element[0]), int.Parse(element[1]), element[2], element[3]);
                 autoPark.AddCar(newCar);
             }
-            autoPark.WriteCars();
+
+            while (true)
+            {
+                bool result = int.TryParse(Console.ReadLine(), out int menu);
+                if (result == true)
+                {
+                    switch (menu)
+                    {
+                        case 1:
+                            autoPark.WriteCars();
+                            break;
+                        case 2:
+                            Console.Write("Введите кол-во колес: ");
+                            int wheel;
+                            while (true)
+                            {
+                                bool resultWheel = int.TryParse(Console.ReadLine(), out wheel);
+                                if (resultWheel == true)
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Вы ввели не число. Введите еще раз");
+                                }
+                            }
+                            Console.Write("Введите кол-во сидушек: ");
+                            int seat;
+                            while (true)
+                            {
+                                bool resultSeat = int.TryParse(Console.ReadLine(), out seat);
+                                if (resultSeat == true)
+                                {
+                                    break;
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Вы ввели не число. Введите еще раз");
+                                }
+                            }
+                            Console.Write("Введите двигатель: ");
+                            string en = (Console.ReadLine());
+                            Console.Write("Введите марку: ");
+                            string id = (Console.ReadLine());
+                            AutoBase newCar = new AutoBase(wheel, seat, en, id);
+                            autoPark.AddCar(newCar);
+                            break;
+                        case 3:
+                            fileWorkService.WriteFile(@"D:\Учеба\C#\Class\InHerit\dataBase.txt", autoPark.ToString());
+                            break;
+                        case 4:
+                            Environment.Exit(0);
+                            break;
+                        default:
+                            Console.WriteLine("Не знаю");
+                            break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Вы ввели не число");
+                }
+
+            }
+
+            //autoPark.WriteCars();
             //autoPark._autos[0].ChangeData(0,0,"","");(Поменять значение у машины, тут первая машина
 
             //foreach (string currentRow in autoData)
@@ -58,7 +128,7 @@ namespace InHerit
             //}
             //autoPark.ToString();
             //Console.WriteLine(autoPark.ToString());
-            fileWorkService.WriteFile(@"D:\Учеба\C#\Class\InHerit\dataBase.txt", autoPark.ToString());
+            //fileWorkService.WriteFile(@"D:\Учеба\C#\Class\InHerit\dataBase.txt", autoPark.ToString());
         }
 
     }
